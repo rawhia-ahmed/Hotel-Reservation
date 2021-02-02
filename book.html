@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rawhia">
+        <meta name="application-name" content="Hotels">
+        <meta name="description" content="HotelReservationweb">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/Paper-notes.svg.png">
+        <link href="fonts/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="fonts/fonts/css/all.min.css">
+        <link rel="stylesheet" href="fonts/fonts/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <title>Booking</title>
+    </head>
+    <body style="background-color:aquamarine;">
+        <div id="page">
+            <header id="header">
+                
+                <div class="nav">
+                    <a href="index.html" class="navbar-brand"> 
+                        <img class="logo" src="images/images.png" alt="">
+                    </a>
+                    <form class="nav-item form-inline">
+                        <input class="form-control m-1" type="search" placeholder="Find your best Hotel">
+                        <button class="btn search-btn m-1" type="submit"> Search <i class="fas fa-search fa-flip-horizontal"></i></button>
+                    </form>
+                </div>
+                <nav class="nav ">
+                    
+                    <a href="index.html" class="nav-item nav-link">Home <i class="fas fa-home"></i></a>
+                    <a href="adminlogin.html" target="blanc" class="nav-item nav-link">Admin<i class="fas fa-address-book"></i></a>
+                    <a href="services.html" target="blanc" class="nav-item nav-link">Services<i class="fas fa-cogs"></i></a>
+                    <a href="#" target="blanc" class="nav-item nav-link active">Booking<i class="fas fa-clipboard-list"></i></a>
+                    <a href="#footer" class="nav-item nav-link">Contact Us<i class="fas fa-comments"></i></a>
+                </nav>
+            </header>
+            <div id="content">
+                <div class="wrapper">
+                  <div class="aside maxheight">
+                    <!-- box begin -->
+                    <div class="box maxheight">
+                      <div class="inner">
+                        <h3>Reservation:</h3>
+                        <form action="addRoom" method="post" id="reservation-form">
+                          <fieldset>
+                            <div class="field">
+                              <label>Check In:</label>
+                              <input type="date" name="checkin"/>
+                            </div>
+                            <div class="field">
+                              <label>Check Out:</label>
+                              <input type="date" name="checkin"/>
+                            </div>
+                            <div class="field"> Adults: &nbsp;
+                              <input type="number" name="Persons" value="Persons"/><br>
+                              kids: &nbsp;
+                              <input type="number" name="Persons" value="Persons"/><br>
+                            </div>
+                            <div>
+                              Way of payment:&nbsp;
+                              <select name="cash">
+                                <option>Cach &#36</option>
+                                <option>Visa card</option>
+                              </select>
+                            </div>
+                              <div class="button"><span><span><button>Book Now</button></span></span></div>
+                          </fieldset>
+                        </form>
+                      </div>
+                    </div>
+                    <!-- box end -->
+                  </div>
+                  <div class="content">
+                    <div class="indent">
+                      <h2>Our location</h2>
+                      <img class="img-indent png" alt="" src="images/5page-img1.png" />
+                      <div class="extra-wrap">
+                        <p class="alt-top">Our hotel is located in the most spectacular part of Prague - surrounded by boutiques, restaurants and luxurious shops.</p>
+                        <p>Please feel free to come visit us at the following adress:</p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.555992304321!2d31.28274434955586!3d30.078259181781057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f95f0512f29%3A0xfa1ccd201d070672!2sFaculty%20of%20Computer%20and%20Information%20Sciences%20-%20Ain%20Shams%20University!5e0!3m2!1sen!2seg!4v1610453022271!5m2!1sen!2seg" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                      <div class="clear"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <footer id="footer">
+                <div class="contact">
+                    <h1>INQUIRY FORM</h1>
+                    <form action="index.html">
+                        <input type="text" name="Name" value="Name" onblur="this.value = !this.value ? 'Name' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="Email" value="Email" onblur="this.value = !this.value ? 'Email' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="Subject" value="Subject" onblur="this.value = !this.value ? 'Subject' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="message" value="Share your thoughts" onblur="this.value = !this.value ? 'Message' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="submit" value="Send" id="submit" style="background-color: rgb(39, 6, 128)">
+                    </form>
+                </div>
+                <div class="section">
+                    <h1>WE’D LOVE TO HEAR FROM YOU.</h1>
+                    <p>If you're having problems 
+                        editing this website template, 
+                        then don't hesitate to ask 
+                        for help on the Forums.
+                    </p>
+                </div>
+                <div>
+                    <div class="connect">
+                        <a href="https://www.facebook.com/" target="blanc" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/" target="blanc" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.googleplus.com/" target="blanc" class="googleplus"><i class="fab fa-google-plus-square"></i></a>
+                        <a href="https://www.linkedin.com/" target="blanc" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>&copy; 2020 Hotels. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    width: auto;
+    background-color: aquamarine;
+}
+body #page {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: auto;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+a:active {
+    background-color: cyan;
+}
+img {
+    border: none;
+}
+/*----------------------------------------header-styles---------------------------------------*/
+#header .nav a img.logo{
+    float: left;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 60%;
+}
+#header  .nav form button{
+	background-color: darkcyan ;
+	color: cyan;
+}
+header nav{
+    position: relative;
+    background-color:darkcyan;
+}
+header a{
+	color: aqua;
+    font-size:1.4rem;
+    text-align: center;
+}
+header a:hover{
+	background-color:gray ;
+	color: aqua;
+}
+header a.active{
+	background-color: darkblue;
+	color: aqua;
+}
+/*----------------------------------------body-home-styles---------------------------------------*/
+#body.home {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+#body.home div{
+    background-color: aquamarine;
+    margin: 0;
+    max-width: none;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#body.home div a img {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    min-height: 100vh; 
+  }
+#body .home #avilability form{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 560px;
+}
+#body .home #avilability form input{
+    background: none;
+    border: 1px solid #B6ADB0;
+    color: blueviolet;
+    display: block;
+    font-family: lato-regular-webfont;
+    font-size: 14px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 8px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    width: 548px;
+}
+/*----------------------------------------services-styles---------------------------------------*/
+#content { margin:0 8px;  padding:11px 40px 20px 40px;}
+#content .indent { padding:17px 0 20px 0;}
+
+#content ul { padding-bottom:20px;}
+#content ul li { padding:0 0 0 13px;}
+
+.contacts-list dt { font-weight:bold; margin-bottom:10px;}
+.contacts-list dd { font-weight:bold;}
+
+#content .gallery { width:100%;margin-left: auto;margin-right: auto;}
+#content .gallery img {margin:13px 20px 20px 11px;width: 175px;height: 100px;}
+
+#content .img-list li { width:100%; overflow:hidden; background:none; padding:0 0 18px 0;}
+#content .img-list li img { float:left; margin:6px 9px 0 0;}
+
+.list1 { font-size:.91em; padding:4px 0 15px 0;flex:0 1 300px;}
+.list1 dt { font-weight:bold; color:blue; margin-bottom:12px; padding:0 0 0 4px;}
+.list1 dd { border-bottom:1px solid darkblue; padding:0 5px 7px 4px; margin-bottom:4px; line-height:1.45em;}
+.list1 dd span { float:right;}
+.list1 dd.alt { border-bottom:none;}
+.list1 dd.last { font-weight:bold; color:darkblue; border-bottom:none;}
+
+h1 { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:60px; line-height:1em; color:#c30000; text-transform:uppercase; font-weight:normal; letter-spacing:-2px;}
+h1 a { color:black; text-decoration:none;}
+h2 { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; color:black; font-size:30px; line-height:1em; font-weight:normal; margin-bottom:12px; letter-spacing:-1px;}
+h3 { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; color:black; font-size:25px; line-height:1em; font-weight:normal; margin-bottom:16px;}
+h4 { font-size:.91em;}
+h5 { font-size:1.33em; color:black; padding-top:10px; margin-bottom:26px;}
+h6 { font-size:1em; color:blue;}
+
+.txt1 { font-size:.91em;}
+.txt2 { color:black; font-size:1.33em; text-transform:uppercase;}
+.extra-img { position:relative; margin:0 -9px 0 -8px;}
+
+.link1 { display:block; float:left; color:blue; background-color: cyan; text-decoration:none;}
+.link1 em { display:block}
+.link1 b { display:block; padding:2px 15px 2px 15px; font-weight:normal; font-style:normal;}
+.link1:hover { text-decoration:underline;}
+
+.button { text-align:center; font-size:.91em;}
+.button span { display:inline-block; padding-left:1px;}
+.button span span { padding-right:1px; padding-left:0;}
+.button span span a { display:inline-block; padding:0 0 3px 0; color:blue; background-color: cyan; width:152px; text-decoration:none; text-transform:uppercase; font-weight:bold;}
+.button span span a:hover { text-decoration:underline;}
+
+.wrapper { width:100%; overflow:hidden ; background-color: darkcyan;display: flex;padding:17px 0 20px 40px;}
+.container { width:100%;display: inline-flex ;
+    gap:20px 150px; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;}
+
+body { background-color:aquamarine; font-family:Tahoma, Geneva, sans-serif; font-size:100%; line-height:1.125em; color:#bca695;}
+
+/*----------------------------------------footer-styles---------------------------------------*/
+.contact {
+    float: left;
+    margin: 0 10px 0 0;
+    max-width: none;
+    padding: 0 0 61px 40px;
+    width: 590px;
+}
+.contact h1 {
+    color: blue;
+    float: left;
+    font-family: lato-regular-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    padding: 15px 0 4px;
+    text-align: left;
+    width: 510px;
+}
+.contact form {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 560px;
+}
+.contact form input {
+    background: none;
+    border: 1px solid #B6ADB0;
+    color: blueviolet;
+    display: block;
+    font-family: lato-regular-webfont;
+    font-size: 14px;
+    font-weight: normal;
+    height: 38px;
+    line-height: 38px;
+    margin: 0 0 8px;
+    padding: 0 0 0 10px;
+    text-align: left;
+    width: 548px;
+}
+.contact form input #submit {
+    background: none;
+    border: 2px solid #c5abb4;
+    color: blue;
+    cursor: pointer;
+    display: block;
+    font-family: lato-bold-webfont;
+    font-size: 16px;
+    font-weight: normal;
+    height: 40px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 141px;
+}
+.contact form input #submit:hover {
+    background-color: yellow;
+    border: none;
+    height: 40px;
+    width: 141px;
+}
+.section h1 {
+    color: blue;
+    display: block;
+    font-family: lato-regular-webfont;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 24px 0 27px;
+    text-align: center;
+    width: 202px;
+}
+.section p {
+    color: blue;
+    display: block;
+    font-family: roboto-regular-webfont;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    width: 202px;
+}
+footer {
+    background-color: aquamarine;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer div{
+    background-color:aquamarine;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+footer div p {
+    color: darkblue;
+    display: block;
+    font-family: roboto-regular-webfont;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 15px;
+    margin: 0;
+    padding: 33px 0 50px;
+    text-align: center;
+    text-transform: none
+}
+footer div .connect {
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    max-width: none;
+    overflow: hidden;
+    padding: 0;
+    width: 240px;
+}
+#footer div .connect a {
+    color: darkblue ;
+    display: inline-block;
+    float: left;
+    height: 50px;
+    margin: 10px;
+    padding: 0;
+    align-content: center;
+    text-align: center;
+    width: 30px;
+}
+#footer div .connect a.facebook {
+    background-position: 0 0;
+}
+#footer div .connect a.googleplus {
+    background-position: 0 -32px;
+}
+#footer div .connect a.pinterest {
+    background-position: 0 -64px;
+}
+#footer div .connect a.twitter {
+    background-position: 0 -96px;
+}

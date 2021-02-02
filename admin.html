@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rawhia">
+        <meta name="application-name" content="Hotels">
+        <meta name="description" content="HotelReservationweb">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/hotel.png">
+        <link href="fonts/css/all.css" rel="stylesheet"> 
+        <link rel="stylesheet" href="fonts/fonts/css/all.min.css">
+        <link rel="stylesheet" href="fonts/fonts/css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        
+        <title>Hotel</title>
+    </head>
+    <body style="background-color: aquamarine;">
+        <div id="page">
+            <header id="header">
+                
+                <div class="nav">
+                    <a href="index.html" class="navbar-brand"> 
+                        <img class="logo" src="images/images.png" alt="">
+                    </a>
+                    <form class="nav-item form-inline">
+                        <input class="form-control m-1" type="search" placeholder="Find your best Hotel">
+                        <button class="btn search-btn m-1" type="submit"> Search <i class="fas fa-search fa-flip-horizontal"></i></button>
+                    </form>
+                </div>
+                <nav class="nav ">
+                    
+                    <a href="index.html" class="nav-item nav-link">Home <i class="fas fa-home"></i></a>
+                    <a href="#" target="blanc" class="nav-item nav-link active">Admin<i class="fas fa-address-book"></i></a>
+                    <a href="services.html" target="blanc" class="nav-item nav-link">Services<i class="fas fa-cogs"></i></a>
+                    <a href="book.html" target="blanc" class="nav-item nav-link">Booking<i class="fas fa-clipboard-list"></i></a>
+                    <a href="#footer" class="nav-item nav-link">Contact Us<i class="fas fa-comments"></i></a>
+                </nav>
+            </header>
+            <div class="wrapper">
+                <form action="addStaff" method="post">
+                </br>
+                <br>
+                    <h1> management staff </h1>
+                    <label> Enter the ID </label>
+                    <input type="number" name="SID"><br>
+                    <label> Enter The Name </label>
+                    <input type="text" name="SName"><br>
+                    <label> Enter the Email </label>
+                    <input type="email"  name="SEmail"><br>
+                    <label> Enter the Mobile Number </label>
+                    <input type="number" name="SNumber"><br>
+                    <input type="button" name="button_A_clicked" value="add staff" />
+                    <input type="button" name="button_D_clicked" value="delet staff" />
+                    <input type="button" name="button_U_clicked" value="update staff" />
+                     
+                </form>
+                <form action="addRoom" method="post">
+                    <br>
+                    <br>
+                    <h1> editing rooms </h1>
+                    <label> Enter the Room Number</label>
+                       <input type="number" name="roomNumber"><br>
+                       <label> Type of Room </label>
+                        <select name="type" id="type"  >
+                       <option value="single"> single </option>
+                       <option value="double">double </option>
+                       <option value="royal"> Royal </option>
+                       <option value="DELUXE"> DELUXE </option>
+                   </select><br>
+                       <label> Availability </label>
+                       <select name="avilability" >
+                           <option value="Avilable">Avilable</option>
+                           <option value="UnAvilable">UnAvilable</option>
+                       </select><br>
+                       <label> Enter The Price </label>
+                       <input type="number" name="Price"><br>
+                       <input type="button" name="button_R_clicked" value="add room"/>
+                       <input type="button" name="button_S_clicked" value="delet room" />
+                       <input type="button" name="button_T_clicked" value="update room" />
+                   
+                   
+               </form>
+                <form action="viewRsv_Info.jsp">
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" name="button_T_clicked" value="View Reservation"/>
+                    <br><br><br><input type="button" name="button_T_clicked" value="View client info" />
+                </form>
+            </div>
+            
+            <footer id="footer">
+                <div class="contact">
+                    <h1>INQUIRY FORM</h1>
+                    <form action="index.html">
+                        <input type="text" name="Name" value="Name" onblur="this.value = !this.value ? 'Name' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="Email" value="Email" onblur="this.value = !this.value ? 'Email' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="Subject" value="Subject" onblur="this.value = !this.value ? 'Subject' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="text" name="message" value="Share your thoughts" onblur="this.value = !this.value ? 'Message' : this.value;" onfocus="this.select()" onclick="this.value = '';">
+                        <input type="submit" value="Send" id="submit" style="background-color: rgb(39, 6, 128)">
+                    </form>
+                </div>
+                <div class="section">
+                    <h1>WE’D LOVE TO HEAR FROM YOU.</h1>
+                    <p>If you're having problems 
+                        editing this website template, 
+                        then don't hesitate to ask 
+                        for help on the Forums.
+                    </p>
+                </div>
+                <div>
+                    <div class="connect">
+                        <a href="https://www.facebook.com/" target="blanc" class="facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/" target="blanc" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="http://www.googleplus.com/" target="blanc" class="googleplus"><i class="fab fa-google-plus-square"></i></a>
+                        <a href="https://www.linkedin.com/" target="blanc" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <p>&copy; 2020 Hotels. All Rights Reserved.</p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
